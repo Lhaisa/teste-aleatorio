@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Until Dawn - Yu-Gi-Oh Fusion</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* --- LOADING SCREEN --- */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .logo {
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .logo img {
+      width: 120px;
+      max-width: 100%;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 0 10px red);
+      animation: spin 5s linear infinite; /* Faz girar */
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .loading-text {
+      font-size: 18px;
+      margin-top: 20px;
+      letter-spacing: 3px;
+      animation: pulse 1.5s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { opacity: 0.3; }
+      to { opacity: 1; }
+    }
+
+    .particle {
+      position: absolute;
+      background: red;
+      border-radius: 50%;
+      opacity: 1;
+      animation: floatUp linear infinite;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(100vh) scale(0.3); opacity: 0.6; }
+      to { transform: translateY(-10vh) scale(1); opacity: 0; }
+    }
+
+    /* --- CONTEÚDO FINAL --- */
+    #content {
+      display: none;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    nav a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* CARDS CAROUSEL SIMPLES */
+    .carousel-container {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-container {
+      width: 150px;
+      height: 220px;
+      margin: 0 10px;
+      background: #222;
+      border: 2px solid red;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading -->
+  <div id="loading-screen">
+    <div class="logo">
+      <img src="Caveira e Areia do Tempo.png" alt="Logo Until Dawn">
+      <div>UNTIL DAWN</div>
+    </div>
+    <div class="loading-text">CARREGANDO...</div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div id="content">
+    <h1>UNTIL DAWN</h1>
+    <nav>
+      <ul>
+        <li><a href="./historia.html">História</a></li>
+        <li><a href="./Personagens.html">Personagens</a></li>
+      </ul>
+    </nav>
+
+    <div class="carousel-container">
+      <div class="card-container">Dark Magician</div>
+      <div class="card-container">Summoned Skull</div>
+      <div class="card-container">Blue-Eyes</div>
+      <div class="card-container">Skull Servant</div>
+    </div>
+
+    <div class="ps1-text">LOADING DUEL SYSTEM...</div>
+  </div>
+
+  <script>
+    // Partículas
+    function createParticle() {
+      const particle = document.createElement("div");
+      const size = Math.random() * 8 + 4;
+      const duration = Math.random() * 5 + 3;
+      const left = Math.random() * 100;
+
+      particle.classList.add("particle");
+      particle.style.width = size + "px";
+      particle.style.height = size + "px";
+      particle.style.left = left + "vw";
+      particle.style.animationDuration = duration + "s";
+
+      document.getElementById("loading-screen").appendChild(particle);
+
+      setTimeout(() => particle.remove(), duration * 1000);
+    }
+
+    setInterval(createParticle, 200);
+
+    // Loading → Conteúdo
+    window.onload = function() {
+      setTimeout(() => {
+        document.getElementById("loading-screen").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      }, 4000);
+    };
+  </script>
+</body>
+</html>
