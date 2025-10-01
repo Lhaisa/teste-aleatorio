@@ -32,9 +32,9 @@
     width: 100%;
     height: 100%;
     background-image: 
-      radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-      radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-      radial-gradient(circle at 60% 30%, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0) 1px, transparent 1px),
+      radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0) 1px, transparent 1px),
+      radial-gradient(circle at 60% 30%, rgba(255, 255, 255, 0) 1px, transparent 1px),
       radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 300px 300px;
     background-position: 0 0;
@@ -72,7 +72,7 @@
   .nav-button {
     background: rgba(255, 255, 255, 0.1);
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     width: 40px;
     height: 40px;
@@ -362,3 +362,12 @@
     0%, 100% { opacity: 0.7; }
     50% { opacity: 0.3; }
   }
+
+ 
+  #historia h1,
+#historia h2,
+#historia h3,
+#historia h4,
+#historia p {
+  color: white;
+}
