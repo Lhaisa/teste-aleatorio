@@ -371,3 +371,31 @@
 #historia p {
   color: white;
 }
+
+#personagens h1,
+#personagens h2,
+#personagens h1,
+#personagens h1,
+#personagens h1,
+#personagens h1,
+#personagens h1,
+#personagens h1,
+#personagens h1,
+#personagens h1,
+#personagens h1,
+#personagens h1,
+#personagens h1,
+#personagens p {
+ 
+  color: white;
+
+}
+
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69ejeXqiaGVlfSHLjSgIq5KxUURwtLki_VeUxCPCT2EZGLHcL4OXdab0H80I65Le0PPU&usqp=CAU");
+  background-size: cover;       /* cobre toda a tela */
+  background-repeat: no-repeat; /* evita repetição */
+  background-attachment: fixed; /* fundo fixo ao rolar a página */
+  background-position: center;  /* centraliza a imagem */
+}
+
