@@ -16,7 +16,9 @@
     align-items: center;
     min-height: 100vh;
     /* PS1-themed background */
-   background-image: url('https://assets.codepen.io/13223981/CleanShot+2025-05-01+at+18.33.57%402x.png');
+   background-image: url(	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9WInunvbxhlJkNo5A5rS4QYa4eKfQQZo5g&s);
+   background-repeat: no-repeat;
+   background-size: cover ;
     font-family: 'Arial', sans-serif;
     perspective: absolute;
     overflow: show;
@@ -47,7 +49,7 @@
     right: 30px;
     width: 100px;
     height: 100px;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8a/PlayStation_logo_%28colored%29.svg');
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69ejeXqiaGVlfSHLjSgIq5KxUURwtLki_VeUxCPCT2EZGLHcL4OXdab0H80I65Le0PPU&usqp=CAU);
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.6;
