@@ -16,7 +16,7 @@
     align-items: center;
     min-height: 100vh;
     /* PS1-themed background */
-   background-image: url(	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9WInunvbxhlJkNo5A5rS4QYa4eKfQQZo5g&s);
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9WInunvbxhlJkNo5A5rS4QYa4eKfQQZo5g&s);
    background-repeat: no-repeat;
    background-size: cover ;
     font-family: 'Arial', sans-serif;
@@ -389,13 +389,5 @@
  
   color: white;
 
-}
-
-body {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69ejeXqiaGVlfSHLjSgIq5KxUURwtLki_VeUxCPCT2EZGLHcL4OXdab0H80I65Le0PPU&usqp=CAU");
-  background-size: cover;       /* cobre toda a tela */
-  background-repeat: no-repeat; /* evita repetição */
-  background-attachment: fixed; /* fundo fixo ao rolar a página */
-  background-position: center;  /* centraliza a imagem */
 }
 
