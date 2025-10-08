@@ -17,12 +17,14 @@
     min-height: 100vh;
     /* PS1-themed background */
    background-image: url(https://i.makeagif.com/media/8-18-2015/nJV9eA.gif);
+  
+   image-rendering: optimizeSpeed;
    background-repeat: no-repeat;
    background-size: cover ;
     font-family: 'Arial', sans-serif;
     perspective: absolute;
     overflow: show;
-    position: center;
+    position: absolute;
   }
   
   /* PS1 Background Elements */
