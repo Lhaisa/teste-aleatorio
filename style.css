@@ -16,7 +16,7 @@
     align-items: center;
     min-height: 100vh;
     /* PS1-themed background */
-   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9WInunvbxhlJkNo5A5rS4QYa4eKfQQZo5g&s);
+   background-image: url(https://i.makeagif.com/media/8-18-2015/nJV9eA.gif);
    background-repeat: no-repeat;
    background-size: cover ;
     font-family: 'Arial', sans-serif;
@@ -47,8 +47,8 @@
     position: absolute;
     bottom: 30px;
     right: 30px;
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69ejeXqiaGVlfSHLjSgIq5KxUURwtLki_VeUxCPCT2EZGLHcL4OXdab0H80I65Le0PPU&usqp=CAU);
     background-size: contain;
     background-repeat: no-repeat;
@@ -365,29 +365,29 @@
 
  
   #historia h1,
-#historia h2,
+ #historia h2,
 #historia h3,
-#historia h4,
-#historia p {
-  color: white;
+ #historia h4,
+  #historia p {
+   color: white;
 }
 
+         #personagens h1,
+        #personagens h2,
+       #personagens h1,
+     #personagens h1,
+    #personagens h1,
+   #personagens h1,
+  #personagens h1,
+ #personagens h1,
 #personagens h1,
-#personagens h2,
-#personagens h1,
-#personagens h1,
-#personagens h1,
-#personagens h1,
-#personagens h1,
-#personagens h1,
-#personagens h1,
-#personagens h1,
-#personagens h1,
-#personagens h1,
-#personagens h1,
-#personagens p {
+ #personagens h1,
+  #personagens h1,
+   #personagens h1,
+    #personagens h1,
+     #personagens p {
  
-  color: white;
+       color: white;
 
 }
 

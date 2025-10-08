@@ -8,10 +8,13 @@
     body {
       margin: 0;
       padding: 0;
-      background: #000000;
+      background-image: url(https://64.media.tumblr.com/05e78cfc2662bc8fc377b969c3816910/tumblr_ntz8zl23ra1uea6rso1_250.gif);
+      background-repeat: no-repeat;
+      background-size: cover ;
       font-family: Arial, sans-serif;
-      color: #fff;
+      color: #ffffff;
       overflow: hidden;
+      position: center;
     }
 
     /* --- LOADING SCREEN --- */
@@ -139,15 +142,63 @@
         <li><a href="./historia.html">História</a></li>
         <li><a href="./Personagens.html">Personagens</a></li>
       </ul>
+
     </nav>
-    <div class="carousel-container">
-      <div class="card-container">Dark Magician</div>
-      <div class="card-container">Summoned Skull</div>
-      <div class="card-container">Blue-Eyes</div>
-      <div class="card-container">Skull Servant</div>
+    <main>
+      <div class="carousel-container">
+         <button class="nav-button prev-button">◀</button>
+
+          <div class="cards-container">
+         <!-- Dark Magician Card -->
+         <div class="card-container active">
+            <div class="card-inner">
+               <div class="card-face card-back"></div>
+               <div class="card-face card-front dark-magician"></div>
+            </div>
+            <div class="magic-particles"></div>
+            <div class="magic-glow"></div>
+            <div class="card-name">Dark Magician</div>
+         </div>
+       <!-- Summoned Skull Card -->
+         <div class="card-container">
+            <div class="card-inner">
+               <div class="card-face card-back"></div>
+               <div class="card-face card-front skull"></div>
+            </div>
+            <div class="magic-particles"></div>
+            <div class="magic-glow red-glow"></div>
+            <div class="card-name">Summoned Skull</div>
+         </div>
+     
+          <!-- Blue-Eyes White Dragon Card -->
+         <div class="card-container">
+            <div class="card-inner">
+               <div class="card-face card-back"></div>
+               <div class="card-face card-front blue-eyes"></div>
+            </div>
+            <div class="magic-particles"></div>
+            <div class="magic-glow blue-glow"></div>
+            <div class="card-name">Blue-Eyes White Dragon</div>
+         </div>
+
+     <div class="card-container">
+            <div class="card-inner">
+               <div class="card-face card-back"></div>
+               <div class="card-face card-front servant"></div>
+            </div>
+            <div class="magic-particles"></div>
+            <div class="magic-glow white-glow"></div>
+            <div class="card-name">Skull Servant</div>
+      
+      </main>
     </div>
+        <button class="nav-button next-button">▶</button>
+   </div>
+
 <footer>
   <div class="ps1-text">LOADING DUEL SYSTEM...</div>
+    <div class="card-info">CLICK to flip. DOUBLE-CLICK to activate. Use ◀ ▶ to switch cards.</div>
+   </div>
   </div>
 </footer>
     
