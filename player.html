@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Player</title>
+</head>
+<body>
+  <!-- Música local tocando em loop -->
+  <audio id="bg-music" autoplay loop>
+    <source src="https://youtu.be/oeSlo3EzGbk" type="audio/mpeg">
+  </audio>
+</body>
+</html>
+
+
+<body>
+  <!-- Player invisível (mantém música tocando) -->
+  <iframe id="player" src="player.html"></iframe>
+
+  <!-- Conteúdo principal (muda entre as páginas) -->
+  <iframe id="content" name="content" src="index.html"></iframe>
+</body>
+</html>
+
+<nav>
+    <ul>
+      <li><a href="historia.html" target="content">História</a></li>
+      <li><a href="personagens.html" target="content">Personagens</a></li>
+    </ul>
+  </nav>
+  
